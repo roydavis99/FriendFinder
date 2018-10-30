@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roydavis99/FriendFinder.git"
+  },
+  "author": "Roy Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roydavis99/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/roydavis99/FriendFinder#readme"
+}
