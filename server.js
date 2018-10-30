@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path");
-var
+
 
 var app = express();
 var PORT = 8000;
