@@ -1,7 +1,7 @@
 var friends = require("../data/friends");
 
 module.exports = function(app){
-    app.get("/api/friends", function(req,res){
+    app.get("/api/friend", function(req,res){
         
     });
 
@@ -17,6 +17,7 @@ module.exports = function(app){
     });
 
     app.get("/api/questions",function(req,res){
+        console.log("Hit");
         //return question
         res.json(friends.questions);
     });

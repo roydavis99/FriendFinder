@@ -20,9 +20,9 @@ var friends = {
     this.list.push({ name, photo, scores });
   },
   questions: [
-    "question 1",
-    "question 2",
-    "question 3",
+    "I like dogs",
+    "The government is out to get me",
+    "Walks through the park when birds are singing is annoying",
     "question 4",
     "question 5",
     "question 6",
