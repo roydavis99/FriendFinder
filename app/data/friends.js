@@ -27,10 +27,10 @@ var friends = {
     "Highschool was the best time of our lives",
     "I would rather be outside then inside",
     "I like Big Bang Theory",
-    "question 7",
-    "question 8",
-    "question 9",
-    "question 10",
+    "Politics are boring",
+    "I want to go Sky Diving",
+    "Everyone is out to get you",
+    "I answered everything truthfully",
 
   ],
   list: [{
