@@ -11,10 +11,11 @@ var friends = {
         top.score = dif;
       }
     });
+
     return this.FindFriend(top.name);
   },
   FindFriend: function(name){
-    return this.list.find(x => {x.name = name});
+    return this.list.find(x => {return x.name === name});
   },
   AddFriend: function (name, photo, scores) {
     this.list.push({ name, photo, scores });
@@ -23,9 +24,9 @@ var friends = {
     "I like dogs",
     "The government is out to get me",
     "Walks through the park when birds are singing is annoying",
-    "question 4",
-    "question 5",
-    "question 6",
+    "Highschool was the best time of our lives",
+    "I would rather be outside then inside",
+    "I like Big Bang Theory",
     "question 7",
     "question 8",
     "question 9",
@@ -34,7 +35,7 @@ var friends = {
   ],
   list: [{
     "name": "Ahmed",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo": "https://i.kym-cdn.com/entries/icons/facebook/000/011/127/original.jpg",
     "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
   }]
 }

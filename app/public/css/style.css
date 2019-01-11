@@ -1,0 +1,20 @@
+body{
+  background-color: lightblue;
+}
+
+.bg-lg{
+  background-color: aliceblue;
+}
+
+.mx-5 {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+.mx-auto{
+  margin: 0em auto;
+}
+
+.my-5{
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}

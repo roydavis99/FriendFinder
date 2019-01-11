@@ -3,32 +3,61 @@
 
 <head>
     <title>Survey</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery.js"></script>
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
     <script type="text/javascript" src="./js/survey.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <form class="container">
+    <form id="survey" class="container my-5">
         <h1>Survey Questions</h1>
         <hr>
-        <h2>About You</h2>
-        <h4>Name Required</h4>
-        <input type="text" id="name" class="form-control" required>
-        <h4>Link to Photo Image (Required)</h4>
-        <input type="text" id="photo" class="form-control" required>
+        <div class="jumbotron">
+            <h2>About You</h2>
+            <h4>Name Required</h4>
+            <input type="text" id="name" class="form-control" required>
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+        </div>
         <hr>
         <div id="questions"></div>
-        <button type="submit">Submit</button>
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
     </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">You Match Is</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="friend-name">Some text in the modal.</p>
+                    <img id="friend-img" width="300" height="300" src="https://www.stefanboatingworld.com.au/wp-content/uploads/2017/04/Generic-portrait-01.jpg"
+                    />
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>

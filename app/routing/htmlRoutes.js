@@ -3,7 +3,6 @@ var path = require("path");
 
 module.exports = function(app){
 app.get("/", function(req, res) {
-  console.log("Route");
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
   
@@ -13,7 +12,6 @@ app.get("/", function(req, res) {
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
-    console.log("Re-Route");
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 }
